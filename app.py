@@ -178,7 +178,7 @@ with gr.Blocks() as demo:
 
     # ui
     fpsSlider = gr.Slider(label="FPS", minimum=1, maximum=120, step=1, value=10)
-    sizeSlider = gr.Slider(label="Array Size", minimum=0, maximum=500, step=1, value=10)
+    sizeSlider = gr.Slider(label="Array Size", minimum=0, maximum=100, step=1, value=10)
     numRangeSlider = gr.Slider(label="Range of Numbers (0 for no repeat)", minimum=0, maximum=100, step=1, value=0)
     ascendingCheckBox = gr.Checkbox(label="Ascending", value=True)
     renderButton = gr.Button("Render Sort")
@@ -223,3 +223,4 @@ with gr.Blocks() as demo:
 
 if __name__ == "__main__":
     demo.launch()
+
